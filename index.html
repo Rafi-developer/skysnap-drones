@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkySnap - Premium Drone Cameras</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><i class="fas fa-camera"></i> SkySnap</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span
+                                class="cart-count">0</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Capture The Sky Like Never Before</h2>
+                <p>Premium drone cameras with 4K resolution, GPS tracking, and intelligent flight modes</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Drones</h2>
+            <p class="section-subtitle">Explore our collection of high-quality drone cameras</p>
+
+            <div class="product-grid" id="productContainer">
+                <!-- Products will be loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Shop By Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-video"></i>
+                    <h3>4K Drones</h3>
+                    <p>Ultra HD video quality</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Racing Drones</h3>
+                    <p>High speed & agility</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-user"></i>
+                    <h3>Beginner Drones</h3>
+                    <p>Easy to fly & learn</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-crown"></i>
+                    <h3>Professional</h3>
+                    <p>For filmmaking & photography</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose SkySnap?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>1-Year Warranty</h3>
+                    <p>All products come with manufacturer warranty</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>Free delivery on orders above $500</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our support team is always ready to help</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-undo"></i>
+                    <h3>30-Day Returns</h3>
+                    <p>Hassle-free return policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About SkySnap</h2>
+                    <p>SkySnap is your one-stop destination for premium drone cameras. Founded in 2020, we've been
+                        providing high-quality aerial photography equipment to enthusiasts and professionals alike.</p>
+                    <p>Our mission is to make drone technology accessible to everyone while maintaining the highest
+                        standards of quality and customer service.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="../Images/Drone-hero-banner-02.webp" alt="About SkySnap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Board Bazar, IT Park, Peshawar - Pakistan</p>
+                    <p><i class="fas fa-phone"></i> +92 (347) 7300226</p>
+                    <p><i class="fas fa-envelope"></i> info@xohubsolutions.com</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: $<span id="cartTotal">0</span></strong>
+                </div>
+                <button class="btn checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3><i class="fas fa-camera"></i> SkySnap</h3>
+                    <p>Your trusted partner for premium drone cameras and aerial photography equipment.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/XoHubSolutions/" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@xohubsolutions?_t=8sCxRMh5twN&_r=1" target="_blank"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://xohubsolutions.com/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                        <a href="https://www.instagram.com/xohubsolutions/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@xohubsolutions" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://pk.linkedin.com/in/hamxowebdeveloper" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SkySnap. All rights reserved. | XoHub Solutions - Hamza - ID: 21111</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
